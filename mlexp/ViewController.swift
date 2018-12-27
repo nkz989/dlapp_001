@@ -13,7 +13,11 @@ import Vision
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     // IBOutlets
-    @IBOutlet weak var classLabel: UILabel!
+    @IBOutlet weak var classLabel: UILabel! {
+        didSet {
+            classLabel.isExclusiveTouch = true
+        }
+    }
     
 
     override func viewDidLoad() {
@@ -77,7 +81,16 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
  
     }
     
-
-
+    @IBAction func actionClassLabelTap(_ sender: UITapGestureRecognizer) {
+        guard let label = sender.view as? UILabel, let classString = label.text else {
+            return
+        }
+        
+        guard let url = URL(string: "https://en.wikipedia.org/wiki/\(classString)") else {
+            return
+        }
+        
+        UIApplication.shared.openURL(url)
+    }
 }
 
