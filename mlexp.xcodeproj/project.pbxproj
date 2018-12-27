@@ -12,6 +12,7 @@
 		A7F4396121D31D84003D5C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F4395F21D31D84003D5C2A /* Main.storyboard */; };
 		A7F4396321D31D86003D5C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F4396221D31D86003D5C2A /* Assets.xcassets */; };
 		A7F4396621D31D86003D5C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F4396421D31D86003D5C2A /* LaunchScreen.storyboard */; };
+		A7F4396E21D32C4C003D5C2A /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A7F4396D21D32C4C003D5C2A /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A7F4396221D31D86003D5C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F4396521D31D86003D5C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7F4396721D31D86003D5C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F4396D21D32C4C003D5C2A /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				A7F4395B21D31D84003D5C2A /* AppDelegate.swift */,
 				A7F4395D21D31D84003D5C2A /* ViewController.swift */,
+				A7F4396D21D32C4C003D5C2A /* Inceptionv3.mlmodel */,
 				A7F4395F21D31D84003D5C2A /* Main.storyboard */,
 				A7F4396221D31D86003D5C2A /* Assets.xcassets */,
 				A7F4396421D31D86003D5C2A /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F4395E21D31D84003D5C2A /* ViewController.swift in Sources */,
+				A7F4396E21D32C4C003D5C2A /* Inceptionv3.mlmodel in Sources */,
 				A7F4395C21D31D84003D5C2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
