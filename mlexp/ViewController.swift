@@ -12,6 +12,8 @@ import Vision
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
+    let model = try? VNCoreMLModel(for: Inceptionv3().model)
+    
     // IBOutlets
     @IBOutlet weak var classLabel: UILabel! {
         didSet {
@@ -19,7 +21,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -51,34 +53,25 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         
         //print("haha", Date())
-        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else { return }
+        //guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else { return }
         
+        guard let model = self.model else { return }
         
         let request = VNCoreMLRequest(model: model){ (finishedReq, err) in
-            
             //perhaps check the err
-            
             //print(finishedReq.results)
             
             guard let results = finishedReq.results as? [VNClassificationObservation] else { return }
-            
             guard let firstObservation = results.first else { return }
             
-            DispatchQueue.main.async (
-                execute: {self.classLabel.text = "\(firstObservation.identifier)"}
-            )
-            
             //print(firstObservation.identifier, firstObservation.confidence)
-            
-            self.classLabel.text = firstObservation.identifier
-            
+            DispatchQueue.main.async {
+                self.classLabel.text = firstObservation.identifier
+            }
         }
         
         guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-        
         try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
- 
- 
     }
     
     @IBAction func actionClassLabelTap(_ sender: UITapGestureRecognizer) {
