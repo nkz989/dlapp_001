@@ -11,23 +11,26 @@ import AVKit
 import Vision
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
-    
+    let captureSession = AVCaptureSession()
     let model = try? VNCoreMLModel(for: Inceptionv3().model)
     
     // IBOutlets
     @IBOutlet weak var classLabel: UILabel! {
         didSet {
             classLabel.isExclusiveTouch = true
+            classLabel.font = UIFont.titleFont
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        self.setupSession()
+    }
+    
+    func setupSession() {
+        self.view.layoutIfNeeded()
         
-        let captureSession = AVCaptureSession()
         captureSession.sessionPreset = .photo
         
         guard let captureDevice = AVCaptureDevice.default(for: .video) else { return }
@@ -38,16 +41,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         captureOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
         captureSession.addOutput(captureOutput)
         
-        
         let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        
-        view.layer.addSublayer(previewLayer)
-        
+        previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         previewLayer.frame = view.frame
+        previewLayer.borderColor = UIColor.black.cgColor
+        view.layer.insertSublayer(previewLayer, at: 0)
         
         captureSession.startRunning()
-        
-        
     }
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
