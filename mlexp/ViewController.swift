@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import Vision
 
-class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+class ViewController: BaseViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     let captureSession = AVCaptureSession()
     let model = try? VNCoreMLModel(for: Inceptionv3().model)
     
@@ -27,6 +27,13 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         self.setupSession()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+    }
+  
     
     func setupSession() {
         self.view.layoutIfNeeded()
