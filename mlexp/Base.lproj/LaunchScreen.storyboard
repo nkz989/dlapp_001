@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-zM-uJE">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkx-PG-Ifd" userLabel="ContentView">
                                 <rect key="frame" x="127.5" y="269" width="120" height="149.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_loading.png" translatesAutoresizingMaskIntoConstraints="NO" id="XmL-19-4eY">
@@ -36,12 +36,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fj7-dy-3xw" firstAttribute="leading" secondItem="Hkx-PG-Ifd" secondAttribute="leading" id="7I8-8o-gJC"/>
+                                    <constraint firstAttribute="bottom" secondItem="fj7-dy-3xw" secondAttribute="bottom" id="KkI-kS-EdP"/>
+                                    <constraint firstItem="XmL-19-4eY" firstAttribute="leading" secondItem="Hkx-PG-Ifd" secondAttribute="leading" id="TF1-cK-TVB"/>
+                                    <constraint firstAttribute="trailing" secondItem="XmL-19-4eY" secondAttribute="trailing" id="a85-2c-uK8"/>
+                                    <constraint firstItem="XmL-19-4eY" firstAttribute="top" secondItem="Hkx-PG-Ifd" secondAttribute="top" id="tdM-P7-2dw"/>
+                                    <constraint firstAttribute="trailing" secondItem="fj7-dy-3xw" secondAttribute="trailing" id="uzw-qc-THw"/>
+                                    <constraint firstItem="fj7-dy-3xw" firstAttribute="top" secondItem="XmL-19-4eY" secondAttribute="bottom" constant="8" id="x77-xI-Qjl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.85490196078431369" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lLb-zM-uJE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N4v-iF-2Cg"/>
-                            <constraint firstItem="lLb-zM-uJE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="OGD-l6-KvO"/>
+                            <constraint firstItem="Hkx-PG-Ifd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="H3c-VB-eIS"/>
+                            <constraint firstItem="Hkx-PG-Ifd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d6v-75-xIX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
