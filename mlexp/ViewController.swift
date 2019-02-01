@@ -33,7 +33,7 @@ class ViewController: BaseViewController, AVCaptureVideoDataOutputSampleBufferDe
         
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
-  
+    
     
     func setupSession() {
         self.view.layoutIfNeeded()
@@ -73,7 +73,7 @@ class ViewController: BaseViewController, AVCaptureVideoDataOutputSampleBufferDe
             
             //print(firstObservation.identifier, firstObservation.confidence)
             DispatchQueue.main.async {
-                self.classLabel.text = firstObservation.identifier
+                
             }
         }
         
@@ -90,7 +90,11 @@ class ViewController: BaseViewController, AVCaptureVideoDataOutputSampleBufferDe
             return
         }
         
-        UIApplication.shared.openURL(url)
+        if #available(iOS 10, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
     }
 }
 

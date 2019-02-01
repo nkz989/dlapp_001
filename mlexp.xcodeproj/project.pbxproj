@@ -12,6 +12,57 @@
 		A7F4396121D31D84003D5C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F4395F21D31D84003D5C2A /* Main.storyboard */; };
 		A7F4396321D31D86003D5C2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F4396221D31D86003D5C2A /* Assets.xcassets */; };
 		A7F4396621D31D86003D5C2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F4396421D31D86003D5C2A /* LaunchScreen.storyboard */; };
+		DF2644622203DA1C0001A8C8 /* HistoryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2644612203DA1C0001A8C8 /* HistoryApi.swift */; };
+		DF264478220407D40001A8C8 /* TraceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF264477220407D40001A8C8 /* TraceCell.swift */; };
+		DF26447A22040E320001A8C8 /* Extension_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26447922040E320001A8C8 /* Extension_UIImage.swift */; };
+		DF26447D220411930001A8C8 /* HistoryEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26447B220411930001A8C8 /* HistoryEntity+CoreDataClass.swift */; };
+		DF26447E220411930001A8C8 /* HistoryEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26447C220411930001A8C8 /* HistoryEntity+CoreDataProperties.swift */; };
+		DF38250E2202F8A000371FFB /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824D92202F8A000371FFB /* Storage.swift */; };
+		DF38250F2202F8A000371FFB /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824DA2202F8A000371FFB /* ImageCache.swift */; };
+		DF3825102202F8A000371FFB /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824DB2202F8A000371FFB /* MemoryStorage.swift */; };
+		DF3825112202F8A000371FFB /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824DC2202F8A000371FFB /* DiskStorage.swift */; };
+		DF3825122202F8A000371FFB /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824DD2202F8A000371FFB /* CacheSerializer.swift */; };
+		DF3825132202F8A000371FFB /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824DE2202F8A000371FFB /* FormatIndicatedCacheSerializer.swift */; };
+		DF3825142202F8A000371FFB /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824E02202F8A000371FFB /* Kingfisher.swift */; };
+		DF3825152202F8A000371FFB /* KingfisherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824E12202F8A000371FFB /* KingfisherError.swift */; };
+		DF3825162202F8A000371FFB /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824E32202F8A000371FFB /* Source.swift */; };
+		DF3825172202F8A000371FFB /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824E42202F8A000371FFB /* Resource.swift */; };
+		DF3825182202F8A000371FFB /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824E52202F8A000371FFB /* ImageDataProvider.swift */; };
+		DF3825192202F8A000371FFB /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824E62202F8A000371FFB /* KingfisherManager.swift */; };
+		DF38251A2202F8A000371FFB /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824E72202F8A000371FFB /* Deprecated.swift */; };
+		DF38251B2202F8A000371FFB /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824E82202F8A000371FFB /* KingfisherOptionsInfo.swift */; };
+		DF38251C2202F8A000371FFB /* ImageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824EA2202F8A000371FFB /* ImageDownloaderDelegate.swift */; };
+		DF38251D2202F8A000371FFB /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824EB2202F8A000371FFB /* RequestModifier.swift */; };
+		DF38251E2202F8A000371FFB /* ImageDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824EC2202F8A000371FFB /* ImageDataProcessor.swift */; };
+		DF38251F2202F8A000371FFB /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824ED2202F8A000371FFB /* SessionDataTask.swift */; };
+		DF3825202202F8A000371FFB /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824EE2202F8A000371FFB /* RedirectHandler.swift */; };
+		DF3825212202F8A000371FFB /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824EF2202F8A000371FFB /* ImageDownloader.swift */; };
+		DF3825222202F8A000371FFB /* AuthenticationChallengeResponsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824F02202F8A000371FFB /* AuthenticationChallengeResponsable.swift */; };
+		DF3825232202F8A000371FFB /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824F12202F8A000371FFB /* ImageModifier.swift */; };
+		DF3825242202F8A000371FFB /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824F22202F8A000371FFB /* SessionDelegate.swift */; };
+		DF3825252202F8A000371FFB /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824F32202F8A000371FFB /* ImagePrefetcher.swift */; };
+		DF3825262202F8A000371FFB /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824F52202F8A000371FFB /* Image.swift */; };
+		DF3825272202F8A000371FFB /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824F62202F8A000371FFB /* ImageFormat.swift */; };
+		DF3825282202F8A000371FFB /* ImageDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824F72202F8A000371FFB /* ImageDrawing.swift */; };
+		DF3825292202F8A000371FFB /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824F82202F8A000371FFB /* ImageTransition.swift */; };
+		DF38252A2202F8A000371FFB /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824F92202F8A000371FFB /* ImageProcessor.swift */; };
+		DF38252B2202F8A000371FFB /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824FA2202F8A000371FFB /* Filter.swift */; };
+		DF38252C2202F8A000371FFB /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824FB2202F8A000371FFB /* Placeholder.swift */; };
+		DF38252D2202F8A000371FFB /* GIFAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824FC2202F8A000371FFB /* GIFAnimatedImage.swift */; };
+		DF38252E2202F8A000371FFB /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3824FE2202F8A000371FFB /* ImageView+Kingfisher.swift */; };
+		DF3825302202F8A000371FFB /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3825002202F8A000371FFB /* UIButton+Kingfisher.swift */; };
+		DF3825312202F8A000371FFB /* WKInterfaceImage+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3825012202F8A000371FFB /* WKInterfaceImage+Kingfisher.swift */; };
+		DF3825322202F8A000371FFB /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3825032202F8A000371FFB /* Indicator.swift */; };
+		DF3825332202F8A000371FFB /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3825042202F8A000371FFB /* AnimatedImageView.swift */; };
+		DF3825342202F8A000371FFB /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3825062202F8A000371FFB /* Runtime.swift */; };
+		DF3825352202F8A000371FFB /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3825072202F8A000371FFB /* CallbackQueue.swift */; };
+		DF3825362202F8A000371FFB /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3825082202F8A000371FFB /* Delegate.swift */; };
+		DF3825372202F8A000371FFB /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3825092202F8A000371FFB /* ExtensionHelpers.swift */; };
+		DF3825382202F8A000371FFB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38250A2202F8A000371FFB /* Result.swift */; };
+		DF3825392202F8A000371FFB /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38250B2202F8A000371FFB /* SizeExtensions.swift */; };
+		DF38253A2202F8A000371FFB /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38250C2202F8A000371FFB /* Box.swift */; };
+		DF38253B2202F8A000371FFB /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38250D2202F8A000371FFB /* String+MD5.swift */; };
+		DF3825622202FC1900371FFB /* HistoryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF3825602202FC1900371FFB /* HistoryModel.xcdatamodeld */; };
 		DF9CB81A21E831B700C03E14 /* TraceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB81921E831B700C03E14 /* TraceViewController.swift */; };
 		DF9CB81F21E8917A00C03E14 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB81E21E8917A00C03E14 /* AboutMeViewController.swift */; };
 		DF9CB82121E89B4500C03E14 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CB82021E89B4500C03E14 /* BaseViewController.swift */; };
@@ -32,8 +83,6 @@
 		DFDF26E521E4774300F60732 /* launch_loading@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDF26CD21E4774300F60732 /* launch_loading@3x.png */; };
 		DFDF26E621E4774300F60732 /* aboutVc_feedback_btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDF26CE21E4774300F60732 /* aboutVc_feedback_btn_bg@2x.png */; };
 		DFDF26E721E4774300F60732 /* aboutVc_feedback_btn_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDF26CF21E4774300F60732 /* aboutVc_feedback_btn_bg@3x.png */; };
-		DFDF26E821E4774300F60732 /* wiki x2.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDF26D021E4774300F60732 /* wiki x2.png */; };
-		DFDF26E921E4774300F60732 /* wiki x3.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDF26D121E4774300F60732 /* wiki x3.png */; };
 		DFDF26EA21E4774300F60732 /* photos_btn_bt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDF26D221E4774300F60732 /* photos_btn_bt@2x.png */; };
 		DFDF26EB21E4774300F60732 /* photos_btn_bt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDF26D321E4774300F60732 /* photos_btn_bt@3x.png */; };
 		DFDF26EC21E4774300F60732 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DFDF26D521E4774300F60732 /* Inceptionv3.mlmodel */; };
@@ -48,6 +97,57 @@
 		A7F4396221D31D86003D5C2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F4396521D31D86003D5C2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7F4396721D31D86003D5C2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2644612203DA1C0001A8C8 /* HistoryApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryApi.swift; sourceTree = "<group>"; };
+		DF264477220407D40001A8C8 /* TraceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceCell.swift; sourceTree = "<group>"; };
+		DF26447922040E320001A8C8 /* Extension_UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIImage.swift; sourceTree = "<group>"; };
+		DF26447B220411930001A8C8 /* HistoryEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DF26447C220411930001A8C8 /* HistoryEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DF3824D92202F8A000371FFB /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		DF3824DA2202F8A000371FFB /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		DF3824DB2202F8A000371FFB /* MemoryStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		DF3824DC2202F8A000371FFB /* DiskStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
+		DF3824DD2202F8A000371FFB /* CacheSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheSerializer.swift; sourceTree = "<group>"; };
+		DF3824DE2202F8A000371FFB /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
+		DF3824E02202F8A000371FFB /* Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kingfisher.swift; sourceTree = "<group>"; };
+		DF3824E12202F8A000371FFB /* KingfisherError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherError.swift; sourceTree = "<group>"; };
+		DF3824E32202F8A000371FFB /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		DF3824E42202F8A000371FFB /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		DF3824E52202F8A000371FFB /* ImageDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataProvider.swift; sourceTree = "<group>"; };
+		DF3824E62202F8A000371FFB /* KingfisherManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherManager.swift; sourceTree = "<group>"; };
+		DF3824E72202F8A000371FFB /* Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
+		DF3824E82202F8A000371FFB /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		DF3824EA2202F8A000371FFB /* ImageDownloaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloaderDelegate.swift; sourceTree = "<group>"; };
+		DF3824EB2202F8A000371FFB /* RequestModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestModifier.swift; sourceTree = "<group>"; };
+		DF3824EC2202F8A000371FFB /* ImageDataProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataProcessor.swift; sourceTree = "<group>"; };
+		DF3824ED2202F8A000371FFB /* SessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDataTask.swift; sourceTree = "<group>"; };
+		DF3824EE2202F8A000371FFB /* RedirectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
+		DF3824EF2202F8A000371FFB /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		DF3824F02202F8A000371FFB /* AuthenticationChallengeResponsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationChallengeResponsable.swift; sourceTree = "<group>"; };
+		DF3824F12202F8A000371FFB /* ImageModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
+		DF3824F22202F8A000371FFB /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		DF3824F32202F8A000371FFB /* ImagePrefetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePrefetcher.swift; sourceTree = "<group>"; };
+		DF3824F52202F8A000371FFB /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		DF3824F62202F8A000371FFB /* ImageFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFormat.swift; sourceTree = "<group>"; };
+		DF3824F72202F8A000371FFB /* ImageDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDrawing.swift; sourceTree = "<group>"; };
+		DF3824F82202F8A000371FFB /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
+		DF3824F92202F8A000371FFB /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		DF3824FA2202F8A000371FFB /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		DF3824FB2202F8A000371FFB /* Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		DF3824FC2202F8A000371FFB /* GIFAnimatedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFAnimatedImage.swift; sourceTree = "<group>"; };
+		DF3824FE2202F8A000371FFB /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		DF3825002202F8A000371FFB /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		DF3825012202F8A000371FFB /* WKInterfaceImage+Kingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKInterfaceImage+Kingfisher.swift"; sourceTree = "<group>"; };
+		DF3825032202F8A000371FFB /* Indicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
+		DF3825042202F8A000371FFB /* AnimatedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
+		DF3825062202F8A000371FFB /* Runtime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
+		DF3825072202F8A000371FFB /* CallbackQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallbackQueue.swift; sourceTree = "<group>"; };
+		DF3825082202F8A000371FFB /* Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		DF3825092202F8A000371FFB /* ExtensionHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
+		DF38250A2202F8A000371FFB /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		DF38250B2202F8A000371FFB /* SizeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeExtensions.swift; sourceTree = "<group>"; };
+		DF38250C2202F8A000371FFB /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		DF38250D2202F8A000371FFB /* String+MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
+		DF3825612202FC1900371FFB /* HistoryModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HistoryModel.xcdatamodel; sourceTree = "<group>"; };
 		DF9CB81921E831B700C03E14 /* TraceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraceViewController.swift; sourceTree = "<group>"; };
 		DF9CB81E21E8917A00C03E14 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		DF9CB82021E89B4500C03E14 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -68,8 +168,6 @@
 		DFDF26CD21E4774300F60732 /* launch_loading@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch_loading@3x.png"; sourceTree = "<group>"; };
 		DFDF26CE21E4774300F60732 /* aboutVc_feedback_btn_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aboutVc_feedback_btn_bg@2x.png"; sourceTree = "<group>"; };
 		DFDF26CF21E4774300F60732 /* aboutVc_feedback_btn_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aboutVc_feedback_btn_bg@3x.png"; sourceTree = "<group>"; };
-		DFDF26D021E4774300F60732 /* wiki x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wiki x2.png"; sourceTree = "<group>"; };
-		DFDF26D121E4774300F60732 /* wiki x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wiki x3.png"; sourceTree = "<group>"; };
 		DFDF26D221E4774300F60732 /* photos_btn_bt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photos_btn_bt@2x.png"; sourceTree = "<group>"; };
 		DFDF26D321E4774300F60732 /* photos_btn_bt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photos_btn_bt@3x.png"; sourceTree = "<group>"; };
 		DFDF26D521E4774300F60732 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
@@ -106,6 +204,7 @@
 		A7F4395A21D31D84003D5C2A /* mlexp */ = {
 			isa = PBXGroup;
 			children = (
+				DF3824D62202F8A000371FFB /* Framework */,
 				DFDF26BF21E4774300F60732 /* Resource */,
 				DFDF26D821E4774300F60732 /* Utils */,
 				A7F4395B21D31D84003D5C2A /* AppDelegate.swift */,
@@ -113,13 +212,149 @@
 				A7F4395D21D31D84003D5C2A /* ViewController.swift */,
 				DFD414EA21E73463008CFABA /* ResultViewController.swift */,
 				DF9CB81921E831B700C03E14 /* TraceViewController.swift */,
+				DF264477220407D40001A8C8 /* TraceCell.swift */,
 				DF9CB81E21E8917A00C03E14 /* AboutMeViewController.swift */,
 				A7F4395F21D31D84003D5C2A /* Main.storyboard */,
 				A7F4396221D31D86003D5C2A /* Assets.xcassets */,
 				A7F4396421D31D86003D5C2A /* LaunchScreen.storyboard */,
 				A7F4396721D31D86003D5C2A /* Info.plist */,
+				DF3825602202FC1900371FFB /* HistoryModel.xcdatamodeld */,
 			);
 			path = mlexp;
+			sourceTree = "<group>";
+		};
+		DF2644602203DA1C0001A8C8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DF2644612203DA1C0001A8C8 /* HistoryApi.swift */,
+				DF26447B220411930001A8C8 /* HistoryEntity+CoreDataClass.swift */,
+				DF26447C220411930001A8C8 /* HistoryEntity+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DF3824D62202F8A000371FFB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DF3824D72202F8A000371FFB /* Kingfisher */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		DF3824D72202F8A000371FFB /* Kingfisher */ = {
+			isa = PBXGroup;
+			children = (
+				DF3824D82202F8A000371FFB /* Cache */,
+				DF3824DF2202F8A000371FFB /* General */,
+				DF3824E92202F8A000371FFB /* Networking */,
+				DF3824F42202F8A000371FFB /* Image */,
+				DF3824FD2202F8A000371FFB /* Extensions */,
+				DF3825022202F8A000371FFB /* Views */,
+				DF3825052202F8A000371FFB /* Utility */,
+			);
+			path = Kingfisher;
+			sourceTree = "<group>";
+		};
+		DF3824D82202F8A000371FFB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				DF3824D92202F8A000371FFB /* Storage.swift */,
+				DF3824DA2202F8A000371FFB /* ImageCache.swift */,
+				DF3824DB2202F8A000371FFB /* MemoryStorage.swift */,
+				DF3824DC2202F8A000371FFB /* DiskStorage.swift */,
+				DF3824DD2202F8A000371FFB /* CacheSerializer.swift */,
+				DF3824DE2202F8A000371FFB /* FormatIndicatedCacheSerializer.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		DF3824DF2202F8A000371FFB /* General */ = {
+			isa = PBXGroup;
+			children = (
+				DF3824E02202F8A000371FFB /* Kingfisher.swift */,
+				DF3824E12202F8A000371FFB /* KingfisherError.swift */,
+				DF3824E22202F8A000371FFB /* ImageSource */,
+				DF3824E62202F8A000371FFB /* KingfisherManager.swift */,
+				DF3824E72202F8A000371FFB /* Deprecated.swift */,
+				DF3824E82202F8A000371FFB /* KingfisherOptionsInfo.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		DF3824E22202F8A000371FFB /* ImageSource */ = {
+			isa = PBXGroup;
+			children = (
+				DF3824E32202F8A000371FFB /* Source.swift */,
+				DF3824E42202F8A000371FFB /* Resource.swift */,
+				DF3824E52202F8A000371FFB /* ImageDataProvider.swift */,
+			);
+			path = ImageSource;
+			sourceTree = "<group>";
+		};
+		DF3824E92202F8A000371FFB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DF3824EA2202F8A000371FFB /* ImageDownloaderDelegate.swift */,
+				DF3824EB2202F8A000371FFB /* RequestModifier.swift */,
+				DF3824EC2202F8A000371FFB /* ImageDataProcessor.swift */,
+				DF3824ED2202F8A000371FFB /* SessionDataTask.swift */,
+				DF3824EE2202F8A000371FFB /* RedirectHandler.swift */,
+				DF3824EF2202F8A000371FFB /* ImageDownloader.swift */,
+				DF3824F02202F8A000371FFB /* AuthenticationChallengeResponsable.swift */,
+				DF3824F12202F8A000371FFB /* ImageModifier.swift */,
+				DF3824F22202F8A000371FFB /* SessionDelegate.swift */,
+				DF3824F32202F8A000371FFB /* ImagePrefetcher.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DF3824F42202F8A000371FFB /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DF3824F52202F8A000371FFB /* Image.swift */,
+				DF3824F62202F8A000371FFB /* ImageFormat.swift */,
+				DF3824F72202F8A000371FFB /* ImageDrawing.swift */,
+				DF3824F82202F8A000371FFB /* ImageTransition.swift */,
+				DF3824F92202F8A000371FFB /* ImageProcessor.swift */,
+				DF3824FA2202F8A000371FFB /* Filter.swift */,
+				DF3824FB2202F8A000371FFB /* Placeholder.swift */,
+				DF3824FC2202F8A000371FFB /* GIFAnimatedImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		DF3824FD2202F8A000371FFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF3824FE2202F8A000371FFB /* ImageView+Kingfisher.swift */,
+				DF3825002202F8A000371FFB /* UIButton+Kingfisher.swift */,
+				DF3825012202F8A000371FFB /* WKInterfaceImage+Kingfisher.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF3825022202F8A000371FFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF3825032202F8A000371FFB /* Indicator.swift */,
+				DF3825042202F8A000371FFB /* AnimatedImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF3825052202F8A000371FFB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DF3825062202F8A000371FFB /* Runtime.swift */,
+				DF3825072202F8A000371FFB /* CallbackQueue.swift */,
+				DF3825082202F8A000371FFB /* Delegate.swift */,
+				DF3825092202F8A000371FFB /* ExtensionHelpers.swift */,
+				DF38250A2202F8A000371FFB /* Result.swift */,
+				DF38250B2202F8A000371FFB /* SizeExtensions.swift */,
+				DF38250C2202F8A000371FFB /* Box.swift */,
+				DF38250D2202F8A000371FFB /* String+MD5.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		DFDF26BF21E4774300F60732 /* Resource */ = {
@@ -151,8 +386,6 @@
 				DFDF26C621E4774300F60732 /* bone_brown_btn_bg@3x.png */,
 				DFDF26C921E4774300F60732 /* nav_back_btn_bt@2x.png */,
 				DFDF26C721E4774300F60732 /* nav_back_btn_bt@3x.png */,
-				DFDF26D021E4774300F60732 /* wiki x2.png */,
-				DFDF26D121E4774300F60732 /* wiki x3.png */,
 			);
 			path = Png;
 			sourceTree = "<group>";
@@ -176,8 +409,10 @@
 		DFDF26D821E4774300F60732 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DF2644602203DA1C0001A8C8 /* CoreData */,
 				DFCB72C421E5860500A3F827 /* Extension_UIFont.swift */,
 				DFCB72C621E5862700A3F827 /* Extension_UIColor.swift */,
+				DF26447922040E320001A8C8 /* Extension_UIImage.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -249,8 +484,6 @@
 				DFDF26E021E4774300F60732 /* bone_brown_btn_bg@2x.png in Resources */,
 				DFDF26E721E4774300F60732 /* aboutVc_feedback_btn_bg@3x.png in Resources */,
 				DFDF26E221E4774300F60732 /* camera_btn_bg@3x.png in Resources */,
-				DFDF26E821E4774300F60732 /* wiki x2.png in Resources */,
-				DFDF26E921E4774300F60732 /* wiki x3.png in Resources */,
 				DFDF26E621E4774300F60732 /* aboutVc_feedback_btn_bg@2x.png in Resources */,
 				DFDF26DE21E4774300F60732 /* bone_brown_btn_bg@3x.png in Resources */,
 				DFDF26E421E4774300F60732 /* launch_loading@2x.png in Resources */,
@@ -272,15 +505,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3825202202F8A000371FFB /* RedirectHandler.swift in Sources */,
+				DF38251F2202F8A000371FFB /* SessionDataTask.swift in Sources */,
+				DF38253B2202F8A000371FFB /* String+MD5.swift in Sources */,
+				DF3825102202F8A000371FFB /* MemoryStorage.swift in Sources */,
+				DF3825192202F8A000371FFB /* KingfisherManager.swift in Sources */,
+				DF3825272202F8A000371FFB /* ImageFormat.swift in Sources */,
+				DF3825132202F8A000371FFB /* FormatIndicatedCacheSerializer.swift in Sources */,
+				DF26447E220411930001A8C8 /* HistoryEntity+CoreDataProperties.swift in Sources */,
+				DF3825182202F8A000371FFB /* ImageDataProvider.swift in Sources */,
+				DF38250F2202F8A000371FFB /* ImageCache.swift in Sources */,
+				DF38251C2202F8A000371FFB /* ImageDownloaderDelegate.swift in Sources */,
 				A7F4395E21D31D84003D5C2A /* ViewController.swift in Sources */,
+				DF38252B2202F8A000371FFB /* Filter.swift in Sources */,
+				DF3825622202FC1900371FFB /* HistoryModel.xcdatamodeld in Sources */,
+				DF3825292202F8A000371FFB /* ImageTransition.swift in Sources */,
 				DFDF26EC21E4774300F60732 /* Inceptionv3.mlmodel in Sources */,
+				DF3825142202F8A000371FFB /* Kingfisher.swift in Sources */,
+				DF3825382202F8A000371FFB /* Result.swift in Sources */,
+				DF3825282202F8A000371FFB /* ImageDrawing.swift in Sources */,
+				DF3825262202F8A000371FFB /* Image.swift in Sources */,
+				DF3825362202F8A000371FFB /* Delegate.swift in Sources */,
 				DF9CB81F21E8917A00C03E14 /* AboutMeViewController.swift in Sources */,
+				DF38251D2202F8A000371FFB /* RequestModifier.swift in Sources */,
+				DF26447A22040E320001A8C8 /* Extension_UIImage.swift in Sources */,
+				DF2644622203DA1C0001A8C8 /* HistoryApi.swift in Sources */,
+				DF3825392202F8A000371FFB /* SizeExtensions.swift in Sources */,
+				DF3825112202F8A000371FFB /* DiskStorage.swift in Sources */,
 				DFCB72C521E5860500A3F827 /* Extension_UIFont.swift in Sources */,
+				DF3825312202F8A000371FFB /* WKInterfaceImage+Kingfisher.swift in Sources */,
+				DF38252D2202F8A000371FFB /* GIFAnimatedImage.swift in Sources */,
+				DF3825242202F8A000371FFB /* SessionDelegate.swift in Sources */,
+				DF3825232202F8A000371FFB /* ImageModifier.swift in Sources */,
+				DF38253A2202F8A000371FFB /* Box.swift in Sources */,
+				DF3825302202F8A000371FFB /* UIButton+Kingfisher.swift in Sources */,
+				DF38251B2202F8A000371FFB /* KingfisherOptionsInfo.swift in Sources */,
+				DF3825332202F8A000371FFB /* AnimatedImageView.swift in Sources */,
+				DF264478220407D40001A8C8 /* TraceCell.swift in Sources */,
 				DF9CB81A21E831B700C03E14 /* TraceViewController.swift in Sources */,
+				DF3825342202F8A000371FFB /* Runtime.swift in Sources */,
+				DF3825252202F8A000371FFB /* ImagePrefetcher.swift in Sources */,
+				DF3825122202F8A000371FFB /* CacheSerializer.swift in Sources */,
+				DF3825222202F8A000371FFB /* AuthenticationChallengeResponsable.swift in Sources */,
+				DF3825372202F8A000371FFB /* ExtensionHelpers.swift in Sources */,
+				DF26447D220411930001A8C8 /* HistoryEntity+CoreDataClass.swift in Sources */,
+				DF38252A2202F8A000371FFB /* ImageProcessor.swift in Sources */,
 				DF9CB82121E89B4500C03E14 /* BaseViewController.swift in Sources */,
+				DF3825172202F8A000371FFB /* Resource.swift in Sources */,
 				DFCB72C721E5862700A3F827 /* Extension_UIColor.swift in Sources */,
+				DF38252E2202F8A000371FFB /* ImageView+Kingfisher.swift in Sources */,
+				DF38252C2202F8A000371FFB /* Placeholder.swift in Sources */,
+				DF3825322202F8A000371FFB /* Indicator.swift in Sources */,
+				DF38251A2202F8A000371FFB /* Deprecated.swift in Sources */,
+				DF3825352202F8A000371FFB /* CallbackQueue.swift in Sources */,
 				A7F4395C21D31D84003D5C2A /* AppDelegate.swift in Sources */,
+				DF3825162202F8A000371FFB /* Source.swift in Sources */,
+				DF3825212202F8A000371FFB /* ImageDownloader.swift in Sources */,
+				DF38251E2202F8A000371FFB /* ImageDataProcessor.swift in Sources */,
 				DFD414EB21E73463008CFABA /* ResultViewController.swift in Sources */,
+				DF3825152202F8A000371FFB /* KingfisherError.swift in Sources */,
+				DF38250E2202F8A000371FFB /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +764,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF3825602202FC1900371FFB /* HistoryModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF3825612202FC1900371FFB /* HistoryModel.xcdatamodel */,
+			);
+			currentVersion = DF3825612202FC1900371FFB /* HistoryModel.xcdatamodel */;
+			path = HistoryModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A7F4395021D31D84003D5C2A /* Project object */;
 }
