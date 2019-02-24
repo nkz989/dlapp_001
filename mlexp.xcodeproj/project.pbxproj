@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A74E092B220E95FD00F28431 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74E092A220E95FD00F28431 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		A7F4395C21D31D84003D5C2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F4395B21D31D84003D5C2A /* AppDelegate.swift */; };
 		A7F4395E21D31D84003D5C2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F4395D21D31D84003D5C2A /* ViewController.swift */; };
 		A7F4396121D31D84003D5C2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F4395F21D31D84003D5C2A /* Main.storyboard */; };
@@ -90,6 +91,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A74E092A220E95FD00F28431 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
 		A7F4395821D31D84003D5C2A /* mlexp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mlexp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F4395B21D31D84003D5C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F4395D21D31D84003D5C2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				A7F4395B21D31D84003D5C2A /* AppDelegate.swift */,
 				DF9CB82021E89B4500C03E14 /* BaseViewController.swift */,
 				A7F4395D21D31D84003D5C2A /* ViewController.swift */,
+				A74E092A220E95FD00F28431 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
 				DFD414EA21E73463008CFABA /* ResultViewController.swift */,
 				DF9CB81921E831B700C03E14 /* TraceViewController.swift */,
 				DF264477220407D40001A8C8 /* TraceCell.swift */,
@@ -529,6 +532,7 @@
 				DF9CB81F21E8917A00C03E14 /* AboutMeViewController.swift in Sources */,
 				DF38251D2202F8A000371FFB /* RequestModifier.swift in Sources */,
 				DF26447A22040E320001A8C8 /* Extension_UIImage.swift in Sources */,
+				A74E092B220E95FD00F28431 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				DF2644622203DA1C0001A8C8 /* HistoryApi.swift in Sources */,
 				DF3825392202F8A000371FFB /* SizeExtensions.swift in Sources */,
 				DF3825112202F8A000371FFB /* DiskStorage.swift in Sources */,
@@ -711,13 +715,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J7F396NY54;
+				DEVELOPMENT_TEAM = CD4Y2L7QSV;
 				INFOPLIST_FILE = mlexp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.YJ.mlexp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YJ.mlexp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -729,13 +733,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J7F396NY54;
+				DEVELOPMENT_TEAM = CD4Y2L7QSV;
 				INFOPLIST_FILE = mlexp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.YJ.mlexp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YJ.mlexp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

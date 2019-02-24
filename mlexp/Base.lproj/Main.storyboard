@@ -70,7 +70,7 @@
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="exclusiveTouch" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="Vif-Z1-tHd" kind="show" id="6Tc-5c-MAu"/>
+                                                    <action selector="choosePhotos" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3B-t3-Dx7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -91,7 +91,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="exclusiveTouch" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="Vif-Z1-tHd" kind="show" id="vJA-nK-VkD"/>
+                                            <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mI2-lm-kge"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IoD-FG-E0y" userLabel="spaceView">
@@ -138,7 +138,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cMM-Xd-Fat"/>
                     <connections>
-                        <outlet property="classLabel" destination="eDV-39-ulW" id="bPA-yJ-FHs"/>
+                        <segue destination="Vif-Z1-tHd" kind="show" identifier="baseToResultSegue" id="6AP-fr-Enp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -177,8 +177,13 @@
                                     <constraint firstItem="0QE-VN-y3r" firstAttribute="leading" secondItem="LYS-dq-AW7" secondAttribute="leading" constant="10" id="UnC-Rd-7dN"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDV-39-ulW">
-                                <rect key="frame" x="0.0" y="588" width="375" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pOO-2V-TFS">
+                                <rect key="frame" x="0.0" y="72" width="375" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4P-WR-NPm">
+                                <rect key="frame" x="16" y="258" width="343" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -188,19 +193,20 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="LYS-dq-AW7" secondAttribute="trailing" id="LQX-wE-nMI"/>
                             <constraint firstItem="LYS-dq-AW7" firstAttribute="top" secondItem="l8D-8a-8qM" secondAttribute="top" id="OZk-Bf-thm"/>
-                            <constraint firstItem="eDV-39-ulW" firstAttribute="trailing" secondItem="LYS-dq-AW7" secondAttribute="trailing" id="SlW-lT-tKz"/>
-                            <constraint firstItem="ne1-8M-mqM" firstAttribute="bottom" secondItem="eDV-39-ulW" secondAttribute="bottom" constant="58" id="kei-2x-Asw"/>
                             <constraint firstItem="LYS-dq-AW7" firstAttribute="leading" secondItem="l8D-8a-8qM" secondAttribute="leading" id="sQR-Jc-mqa"/>
                             <constraint firstItem="ne1-8M-mqM" firstAttribute="top" secondItem="LYS-dq-AW7" secondAttribute="bottom" constant="-44" id="swK-fL-bbk"/>
-                            <constraint firstItem="eDV-39-ulW" firstAttribute="leading" secondItem="LYS-dq-AW7" secondAttribute="leading" id="zzF-a9-2uB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ne1-8M-mqM"/>
                     </view>
                     <navigationItem key="navigationItem" id="nEH-Cg-wJe"/>
+                    <connections>
+                        <outlet property="imageUi" destination="pOO-2V-TFS" id="XeK-9S-sdr"/>
+                        <outlet property="predictClass" destination="f4P-WR-NPm" id="YcK-8y-geJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncD-Bf-hRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="-750"/>
+            <point key="canvasLocation" x="1229.5999999999999" y="-750.67466266866575"/>
         </scene>
         <!--Trace View Controller-->
         <scene sceneID="vB5-FM-n6b">
@@ -451,7 +457,4 @@
         <image name="photos_btn_bt.png" width="52" height="75"/>
         <image name="trace_btn_bg.png" width="63" height="75"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="6Tc-5c-MAu"/>
-    </inferredMetricsTieBreakers>
 </document>
